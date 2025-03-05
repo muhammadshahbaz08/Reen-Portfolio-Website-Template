@@ -2,10 +2,9 @@ import { Hero, Services, About } from "./components";
 
 export default function Home() {
   return (
-    <main className="">
-      {/* Hello */}
-      {/* <Hero />
-      <Services />
+    <main >
+      <Hero />
+      {/* <Services />
       <About /> */}
     </main>
   );
