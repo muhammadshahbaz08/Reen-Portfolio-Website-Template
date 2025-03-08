@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <main >
       <Hero />
-      {/* <Services />
-      <About /> */}
+       <Services />
+      {/* <About />  */}
     </main>
   );
 }
