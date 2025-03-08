@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="uppercase">
             <a
               href=""
-              className=" bg-[#00bc9c] font-bold text-[18px] border-b-2 border-[#00a085] rounded-md py-6 px-16 "
+              className=" bg-[#00bc9c] hover:bg-[#05836e] font-bold text-[18px] border-b-2 border-[#00a085] rounded-md py-6 px-16"
             >
               Get Started Now
             </a>
