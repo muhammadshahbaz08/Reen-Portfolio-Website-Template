@@ -27,7 +27,7 @@ const Services = () => {
           </div>
           {/* service-2 */}
           <div className="grid grid-cols-[auto,1fr] gap-7  ">
-            <div className="mt-1">
+            <div className="mt-1">  
               <FaRegLightbulb size={50} className="text-[#00bc9c]"/>
             </div>
             <div>
