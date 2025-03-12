@@ -2,10 +2,10 @@ import { Hero, Services, Portfolio } from "./components";
 
 export default function Home() {
   return (
-    <main >
+    <main>
       <Hero />
-       <Services />
-      <Portfolio /> 
+      <Services />
+      <Portfolio />
     </main>
   );
 }
