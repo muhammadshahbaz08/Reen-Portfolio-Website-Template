@@ -6,8 +6,17 @@
   img {
     max-width: none;
   }
+  body {
+    @apply font-sans;
+    font-family: "Source Sans 3", sans-serif;
+  }
 }
-body {
-  @apply font-sans;
-  font-family: "Source Sans 3", sans-serif;
+
+/* Custom Swiper Pagination Styles */
+.custom-swiper .swiper-pagination-bullet {
+  @apply w-3 h-3 bg-[#506a85] opacity-70;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  @apply bg-[#00bc9c] opacity-100;
 }
