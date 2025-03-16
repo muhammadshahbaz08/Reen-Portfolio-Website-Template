@@ -10,7 +10,7 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import Image from "next/image";
-import logo from "../../../public/img/logo.png";
+import { logo } from "../../../public/img";
 
 const Navbar = () => {
   return (
