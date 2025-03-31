@@ -1,4 +1,4 @@
-import { Hero, Services, Portfolio, CallToAction } from "./components";
+import { Hero, Services, Portfolio, CallToAction, Footer } from "./components";
 
 export default function Home() {
   return (
@@ -7,6 +7,7 @@ export default function Home() {
       <Services />
       <Portfolio />
       <CallToAction />
+      <Footer />
     </main>
   );
 }
