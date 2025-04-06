@@ -1,3 +1,4 @@
+"use client";
 import {
   FaRegEnvelope,
   FaMobileAlt,
@@ -9,15 +10,18 @@ import {
   FaDribbble,
   FaSearch,
 } from "react-icons/fa";
+import { CgMenu } from "react-icons/cg";
 import Image from "next/image";
 import { logo } from "../../../public/img";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <header className=" text-text leading-10">
+    <header className="fixed top-0 left-0 w-full z-50 lg:relative bg-white shadow-md text-text leading-10 ">
       {/* mini-header*/}
-      <div className="bg-primary h-10  text-[12px] text-text border-b-[1px] border-[#e6e9ed]">
-        <div className="container max-w-[1160px] mx-auto ">
+      <div className="hidden lg:block bg-primary h-10  text-[12px] text-text border-b-[1px] border-[#e6e9ed] ">
+        <div className="max-w-[1160px] mx-auto ">
           <div className="grid grid-cols-2 ">
             {/* mini-header-contact */}
             <div className="flex">
@@ -73,46 +77,69 @@ const Navbar = () => {
       </div>
 
       {/* main-header */}
-      <div className="h-28 py-[35px] border-b-[1px] border-[#e6e9ed] ">
-        <div className="container max-w-[1160px] mx-auto">
-          <div className="grid grid-cols-[auto,1fr] items-center">
+      <div className="h-28 py-[35px] border-b-[1px] border-[#e6e9ed] overflow-hidden">
+        <div className=" px-6 lg:px-0 max-w-[1160px] mx-auto">
+          <div className="flex justify-between lg:grid lg:grid-cols-[auto,1fr] items-center ">
             {/* Logo */}
             <div>
               <Image src={logo} alt="logo" />
             </div>
-            {/* Navigation */}
-            <nav className="flex items-center ">
+            {/* Navigation for larger screen*/}
+            <nav className="hidden lg:flex  items-center justify-evenly ">
               <span className="flex gap-11 ml-24 text-[15px] font-bold uppercase">
                 <a href="" className="hover:text-[#3c5570]">
                   Home
                 </a>
                 <a href="" className="hover:text-[#3c5570]">
-                  Portfolio
+                  Who we are
                 </a>
                 <a href="" className="hover:text-[#3c5570]">
-                  Blog
+                  Latest Work
                 </a>
                 <a
                   href=""
                   className="hover:text-[#3c5570] visited:text-[#3c5570]"
                 >
-                  Pages
-                </a>
-                <a href="" className="hover:text-[#3c5570]">
-                  Features
-                </a>
-                <a href="" className="whitespace-nowrap hover:text-[#3c5570]">
-                  Mega Menu
-                </a>
-                <a href="" className="hover:text-[#3c5570]">
-                  Contact
+                  Get In touch
                 </a>
               </span>
               {/* Search Icon (Moved to Right) */}
-              <a href="" className="ml-52 hover:text-[#3c5570]">
+              <a href="" className=" hover:text-[#3c5570] ">
                 <FaSearch size={14} />
               </a>
             </nav>
+            {/* Menu toggle */}
+            <div className="lg:hidden relative ">
+              <CgMenu size={40} onClick={() => setShowMenu(!showMenu)} />
+              {showMenu && (
+                <div className="fixed top-[111px] left-0 right-0 w-full   bg-[#506a85] text-white flex flex-col items-center justify-center gap-4 text-xl shadow-lg z-40 uppercase ">
+                  <a
+                    href=""
+                    className="text-[15px] font-bold  border-b border-[#3d5269] p-5  w-full text-center hover:text-[#3c5570]"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href=""
+                    className="text-[15px] font-bold  border-b border-[#3d5269] pb-5 w-full text-center"
+                  >
+                    Who we are
+                  </a>
+                  <a
+                    href=""
+                    className="text-[15px] font-bold  border-b border-[#3d5269] pb-5  w-full text-center"
+                  >
+                    latest work
+                  </a>
+                  <a
+                    href=""
+                    className="text-[15px] font-bold   border-b border-[#3d5269] mb-2 pb-5 w-full  text-center"
+                  >
+                    Get in Touch
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
