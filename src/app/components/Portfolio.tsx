@@ -9,7 +9,7 @@ import { post1, post2, item1, item2, item3, item4 } from "../../../public/img";
 const Portfolio = () => {
   return (
     <section className="bg-[#f2f5f7]">
-      <div className="container max-w-[1160px] mx-auto py-32">
+      <div className=" max-w-[1160px] mx-auto py-32">
         {/* sectionIntro */}
         <div className="text-center ">
           <h1 className="text-[#506a85] text-[42px] mb-4 font-semibold">

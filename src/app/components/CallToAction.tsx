@@ -1,6 +1,6 @@
 const CallToAction = () => {
   return (
-    <section className="container max-w-[1160px] mx-auto  py-32">
+    <section className=" max-w-[1160px] mx-auto  py-32">
       {/*section-content */}
       <div className="w-[745px] mx-auto text-center ">
         <h1 className="text-[#506a85] text-[44px] mb-10 font-semibold">

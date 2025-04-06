@@ -3,7 +3,7 @@ const Hero = () => {
     // Hero or Feature Seciton
     <section className="bg-[#47617c] h-[780px] bg-cover bg-no-repeat bg-[url(../../public/img/bg.jpg)]">
       {/*contianer*/}
-      <div className="container max-w-[1160px] mx-auto text-white text-center">
+      <div className=" max-w-[1160px] mx-auto text-white text-center">
         <div className="max-w-full w-[945px] mx-auto ">
           {/*hero content*/}
           <div className="pt-[250px]">

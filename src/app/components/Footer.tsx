@@ -18,7 +18,7 @@ const Footer = () => {
     <footer>
       {/* footer-main */}
       <section className="bg-[#2f4052]">
-        <div className="container max-w-[1160px] mx-auto py-[75px]">
+        <div className=" max-w-[1160px] mx-auto py-[75px]">
           {/*main-grid */}
           <div className="grid grid-cols-4 gap-10">
             {/* col-1 */}
@@ -119,7 +119,7 @@ const Footer = () => {
       </section>
       {/* footer-nav-section*/}
       <section className="bg-[#283645]">
-        <div className="container max-w-[1160px] mx-auto py-[35px] text-[#707e8c]">
+        <div className=" max-w-[1160px] mx-auto py-[35px] text-[#707e8c]">
           <div className="flex justify-between items-center">
             {/* Left Side: Copyright */}
             <div className="flex items-center gap-2">

@@ -2,7 +2,7 @@ import { FaRegHeart, FaRegLightbulb, FaRegStar } from "react-icons/fa";
 const Services = () => {
   return (
     <section>
-      <div className="container max-w-[1160px] mx-auto py-32">
+      <div className=" max-w-[1160px] mx-auto py-32">
         {/*serivces-head*/}
         <div className="mx-auto text-center  text-[#5a748e] w-[769px]">
           <h1 className="text-[44px] font-semibold">
