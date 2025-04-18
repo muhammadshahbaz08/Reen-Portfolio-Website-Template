@@ -1,4 +1,4 @@
-## Portfolio-Template-for-Designer 
+## Reen - Portfolio website template.
 
 ## Built with
 - Type Script
