@@ -4,17 +4,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
-import {
-  post1,
-  post2,
-  item1,
-  item2,
-  item3,
-  item4,
-  item5,
-  item6,
-  item7,
-} from "../../../public/img";
+import { post1, post2, item1, item2, item3, item4 } from "../../../public/img";
 
 const Portfolio = () => {
   return (
