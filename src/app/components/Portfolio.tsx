@@ -4,12 +4,22 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
-import { post1, post2, item1, item2, item3, item4 } from "../../../public/img";
+import {
+  post1,
+  post2,
+  item1,
+  item2,
+  item3,
+  item4,
+  item5,
+  item6,
+  item7,
+} from "../../../public/img";
 
 const Portfolio = () => {
   return (
     <section className="bg-[#f2f5f7]">
-      <div className=" max-w-[1160px] mx-auto py-32">
+      <div className="container mx-auto py-32 px-4">
         {/* sectionIntro */}
         <div className="text-center ">
           <h1 className="text-[#506a85] text-[42px] mb-4 font-semibold">
@@ -21,7 +31,7 @@ const Portfolio = () => {
           </p>
         </div>
         {/* posts */}
-        <div className="grid grid-cols-2 mt-20 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-20 gap-8 items-center ">
           {/* Post-1 */}
           <div className="bg-white">
             <Image src={post1} alt={"post-1"} className="w-full" />
@@ -44,33 +54,38 @@ const Portfolio = () => {
           </div>
         </div>
         {/* caraousel */}
-        <div className="pt-14">
+        <div className="pt-14 w-full">
           <Swiper
-            spaceBetween={50}
-            slidesPerView={4}
+            spaceBetween={15}
             pagination={{
               clickable: true,
             }}
             modules={[Pagination]}
             className="pb-16 custom-swiper"
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              450: { slidesPerView: 2 },
+              500: { slidesPerView: 3 },
+              768: { slidesPerView: 4 },
+            }}
           >
-            <SwiperSlide>
-              <Image src={item1} alt={"item1"} />
+            <SwiperSlide className="flex justify-center items-center">
+              <Image src={item1} alt={"item1"} className="w-full h-auto" />
             </SwiperSlide>
-            <SwiperSlide>
-              <Image src={item2} alt={"item2"} />
+            <SwiperSlide className="flex justify-center items-center">
+              <Image src={item2} alt={"item2"} className="w-full h-auto" />
             </SwiperSlide>
-            <SwiperSlide>
-              <Image src={item3} alt={"item3"} />
+            <SwiperSlide className="flex justify-center items-center">
+              <Image src={item3} alt={"item3"} className="w-full h-auto" />
             </SwiperSlide>
-            <SwiperSlide>
-              <Image src={item4} alt={"item4"} />
+            <SwiperSlide className="flex justify-center items-center">
+              <Image src={item4} alt={"item4"} className="w-full h-auto" />
             </SwiperSlide>
-            <SwiperSlide>
-              <Image src={item1} alt={"item1"} />
+            <SwiperSlide className="flex justify-center items-center">
+              <Image src={item1} alt={"item1"} className="w-full h-auto" />
             </SwiperSlide>
-            <SwiperSlide>
-              <Image src={item2} alt={"item2"} />
+            <SwiperSlide className="flex justify-center items-center">
+              <Image src={item2} alt={"item2"} className="w-full h-auto" />
             </SwiperSlide>
           </Swiper>
         </div>

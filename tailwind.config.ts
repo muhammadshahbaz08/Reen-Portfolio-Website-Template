@@ -7,6 +7,16 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true, // This centers the container
+
+      screens: {
+        sm: "540px", // Container width at sm breakpoint
+        md: "720px", // Container width at md breakpoint
+        lg: "960px", // Container width at lg breakpoint
+        xl: "1160px", // Container width at xl breakpoint
+      },
+    },
     extend: {
       fontFamily: {
         sans: ["Source Sans 3", "sans-serif"],
