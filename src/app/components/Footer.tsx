@@ -130,25 +130,25 @@ const Footer = () => {
             {/* Right Side: Navigation Links */}
             <nav className="flex space-x-1 text-[14px]">
               <a
-                href="#"
+                href="#home"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
                 Home
               </a>
               <a
-                href="#"
+                href="#services"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
                 Who we are
               </a>
               <a
-                href="#"
+                href="#portfolio"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
                 Latest Work
               </a>
               <a
-                href="#"
+                href="#cta"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
                 Get in touch

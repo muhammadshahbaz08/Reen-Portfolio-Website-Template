@@ -87,26 +87,22 @@ const Navbar = () => {
             {/* Navigation for larger screen*/}
             <nav className="hidden lg:flex  items-center justify-evenly ">
               <span className="flex gap-11 ml-24 text-[15px] font-bold uppercase">
-                <a href="" className="hover:text-[#3c5570]">
+                <a href="#home" className="hover:text-[#3c5570]">
                   Home
                 </a>
-                <a href="" className="hover:text-[#3c5570]">
+                <a href="#services" className="hover:text-[#3c5570]">
                   Who we are
                 </a>
-                <a href="" className="hover:text-[#3c5570]">
+                <a href="#portfolio" className="hover:text-[#3c5570]">
                   Latest Work
                 </a>
                 <a
-                  href=""
+                  href="#cta"
                   className="hover:text-[#3c5570] visited:text-[#3c5570]"
                 >
                   Get In touch
                 </a>
               </span>
-              {/* Search Icon (Moved to Right) */}
-              <a href="" className=" hover:text-[#3c5570] ">
-                <FaSearch size={14} />
-              </a>
             </nav>
             {/* Menu toggle */}
             <div className="lg:hidden relative ">

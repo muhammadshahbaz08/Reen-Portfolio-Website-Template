@@ -8,7 +8,7 @@ import { post1, post2, item1, item2, item3, item4 } from "../../../public/img";
 
 const Portfolio = () => {
   return (
-    <section className="bg-[#f2f5f7]">
+    <section className="bg-[#f2f5f7]" id="portfolio">
       <div className="container mx-auto  py-24 md:py-32 px-4">
         {/* sectionIntro */}
         <div className="text-center ">
