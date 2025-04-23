@@ -9,13 +9,13 @@ import { post1, post2, item1, item2, item3, item4 } from "../../../public/img";
 const Portfolio = () => {
   return (
     <section className="bg-[#f2f5f7]">
-      <div className="container mx-auto py-32 px-4">
+      <div className="container mx-auto  py-24 md:py-32 px-4">
         {/* sectionIntro */}
         <div className="text-center ">
           <h1 className="text-[#506a85] text-[42px] mb-4 font-semibold">
             Check out our latest works
           </h1>
-          <p className="text-[#73879c] text-[18px]">
+          <p className="text-[#73879c] text-[18px] text-balance">
             Magnis modipsae que voloratati andigen daepeditem quiate re porem
             aut labor.
           </p>

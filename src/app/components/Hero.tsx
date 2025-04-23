@@ -6,11 +6,11 @@ const Hero = () => {
       <div className=" container px-4 mx-auto text-white text-center">
         <div className="w-full max-w-[945px] mx-auto  ">
           {/*hero content*/}
-          <div className="pt-[290px] sm:pt-[320px] lg:pt-[250px]">
-            <h1 className="uppercase leading-none text-[40px] font-bold md:text-[70px] lg:text-[90px]  max-w-full">
+          <div className="pt-[260px] sm:pt-[320px] lg:pt-[250px]">
+            <h1 className="uppercase leading-none text-[50px] font-bold md:text-[70px] lg:text-[90px] max-w-full">
               Made for Designers
             </h1>
-            <p className="pt-2 text-[20px] md:text-[22px] lg:text-[24px] text-[#a3b1bf] mb-[50px]  max-w-[940px] ">
+            <p className="pt-2 text-[20px] md:text-[22px] lg:text-[24px] text-[#a3b1bf] mb-[50px]  max-w-[940px] text-balance md:text-pretty">
               Create your online portfolio in minutes with the professionally
               and lovingly designed REEN website template. Customize your site
               with versatile and easy to use features.

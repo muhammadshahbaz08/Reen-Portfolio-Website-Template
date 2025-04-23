@@ -2,13 +2,13 @@ import { FaRegHeart, FaRegLightbulb, FaRegStar } from "react-icons/fa";
 const Services = () => {
   return (
     <section>
-      <div className=" container mx-auto px-4 py-32">
+      <div className=" container mx-auto px-4 py-24  md:py-32">
         {/*serivces-head*/}
         <div className="mx-auto text-center  text-[#5a748e] w-full max-w-[769px]">
-          <h1 className="text-[36px]  md:text-[44px] font-semibold">
+          <h1 className="text-[42px]  md:text-[44px] font-semibold">
             Beautiful. Clean. Responsive.
           </h1>
-          <p className="text-[18px]  md:text-[22px] mt-4 mb-20">
+          <p className="text-[18px]  md:text-[22px] mt-4 mb-20 text-balance">
             REEN is a high-quality solution for those who want a beautiful
             website in no time. It's fully responsive and will adapt itself to
             any mobile device. iPad, iPhone, Android, it doesn't matter. Your
