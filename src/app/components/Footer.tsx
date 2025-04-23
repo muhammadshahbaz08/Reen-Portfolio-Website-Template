@@ -18,9 +18,9 @@ const Footer = () => {
     <footer>
       {/* footer-main */}
       <section className="bg-[#2f4052]">
-        <div className=" max-w-[1160px] mx-auto py-[75px]">
+        <div className=" container mx-auto px-4 py-[75px]">
           {/*main-grid */}
-          <div className="grid grid-cols-4 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-10">
             {/* col-1 */}
             <div className="">
               <h1 className="text-white mb-2 text-[22px] font-semibold ">
@@ -79,15 +79,15 @@ const Footer = () => {
                 et consent accullignis dentibea autem inisita.
               </p>
               <div className=" mt-3 text-[14px]">
-                <div className=" text-[#a3b1bf] hover:text-[#00bc9c] hover:font-semibold">
+                <div className=" text-[#a3b1bf] ">
                   <FaLocationDot className="inline mr-3 " />
                   84 Street, City, State 24813
                 </div>
-                <div className=" text-[#a3b1bf] hover:text-[#00bc9c] hover:font-semibold">
+                <div className=" text-[#a3b1bf] ">
                   <FaMobileAlt className="inline mr-3" />
                   +00 (123) 456 78 90
                 </div>
-                <div className="text-[#a3b1bf] hover:text-[#00bc9c] hover:font-semibold">
+                <div className="text-[#a3b1bf] ">
                   <FaRegEnvelope className="inline mr-3" />
                   info@reen.com
                 </div>
@@ -119,10 +119,10 @@ const Footer = () => {
       </section>
       {/* footer-nav-section*/}
       <section className="bg-[#283645]">
-        <div className=" max-w-[1160px] mx-auto py-[35px] text-[#707e8c]">
-          <div className="flex justify-between items-center">
+        <div className="container mx-auto px-4 py-[35px] text-[#707e8c]">
+          <div className="flex justify-center md:justify-between items-center flex-wrap ">
             {/* Left Side: Copyright */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 mb-3 sm:mb-0">
               <FaRegCopyright size={14} />
               <p className="text-[14px]">2025 REEN. All rights reserved.</p>
             </div>
@@ -139,28 +139,19 @@ const Footer = () => {
                 href="#"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
-                Portfolio
+                Who we are
               </a>
               <a
                 href="#"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
-                Blog
+                Latest Work
               </a>
               <a
                 href="#"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
-                About
-              </a>
-              <a
-                href="#"
-                className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
-              >
-                Services
-              </a>
-              <a href="#" className="hover:text-[#00bc9c]">
-                Contact
+                Get in touch
               </a>
             </nav>
           </div>

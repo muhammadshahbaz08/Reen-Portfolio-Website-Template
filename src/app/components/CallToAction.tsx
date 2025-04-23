@@ -1,12 +1,12 @@
 const CallToAction = () => {
   return (
-    <section className=" max-w-[1160px] mx-auto  py-32">
+    <section className="container mx-auto  py-24 md:py-32 px-4">
       {/*section-content */}
-      <div className="w-[745px] mx-auto text-center ">
-        <h1 className="text-[#506a85] text-[44px] mb-10 font-semibold">
+      <div className="max-w-[745px] mx-auto text-center ">
+        <h1 className="text-[#506a85] text-[42px] md:text-[44px] mb-5  font-semibold">
           Want to work with us?
         </h1>
-        <p className="text-[#73879c] text-[22px] ">
+        <p className="text-[#73879c] text-[18px] md:text-[22px]">
           Magnis modipsae que voloratati andigen daepeditem quiate re porem aut
           labor. Laceaque quiae sitiorem rest non restibusaes maio es dem
           tumquam.
