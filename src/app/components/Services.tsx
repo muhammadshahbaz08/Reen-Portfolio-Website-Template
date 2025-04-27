@@ -10,8 +10,8 @@ const Services = () => {
           </h1>
           <p className="text-[18px]  md:text-[22px] mt-4 mb-20 text-balance">
             REEN is a high-quality solution for those who want a beautiful
-            website in no time. It's fully responsive and will adapt itself to
-            any mobile device. iPad, iPhone, Android, it doesn't matter. Your
+            website in no time. It&apos;s fully responsive and will adapt itself
+            to any mobile device. iPad, iPhone, Android, it doesn't matter. Your
             content will always looks its absolute best.
           </p>
         </div>

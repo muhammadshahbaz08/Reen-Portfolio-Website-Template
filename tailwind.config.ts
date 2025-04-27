@@ -24,8 +24,6 @@ export default {
       colors: {
         primary: "#f5f7fa",
         text: "#506a85",
-        // secondary: "#FF9357",
-        // sectionBg: "#F2F7FF",
       },
       scrollBehavior: {
         smooth: "smooth",
