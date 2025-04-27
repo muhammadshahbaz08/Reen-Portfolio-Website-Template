@@ -27,6 +27,9 @@ export default {
         // secondary: "#FF9357",
         // sectionBg: "#F2F7FF",
       },
+      scrollBehavior: {
+        smooth: "smooth",
+      },
     },
   },
   plugins: [],
