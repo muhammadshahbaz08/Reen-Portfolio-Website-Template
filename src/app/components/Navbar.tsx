@@ -37,37 +37,61 @@ const Navbar = () => {
             {/* mini-header-socails */}
             <div className="flex justify-end ">
               <span className="flex items-center gap-4 ">
-                <a href="/">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaFacebookF
                     size={14}
-                    className=" text-text hover:text-[#3c5570]"
+                    className=" text-text hover:text-[#1877F2]"
                   />
                 </a>
-                <a href="/">
+                <a
+                  href="https://plus.google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaGooglePlusG
                     size={14}
-                    className=" text-text hover:text-[#3c5570]"
+                    className=" text-text hover:text-[#DB4437]"
                   />
                 </a>
-                <a href="/">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaTwitter
                     size={14}
-                    className=" text-text hover:text-[#3c5570]"
+                    className=" text-text hover:text-[#1DA1F2]"
                   />
                 </a>
-                <a href="/">
-                  <FaPinterest className=" text-text hover:text-[#3c5570]" />
+                <a
+                  href="https://pinterest.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaPinterest className=" text-text hover:text-[#E60023]" />
                 </a>
-                <a href="/">
+                <a
+                  href="https://dribbble.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaDribbble
                     size={14}
-                    className=" text-text hover:text-[#3c5570]"
+                    className=" text-text hover:text-[#EA4C89]"
                   />
                 </a>
-                <a href="/">
+                <a
+                  href="https://behance.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaBehance
                     size={14}
-                    className=" text-text hover:text-[#3c5570]"
+                    className=" text-text hover:text-[#1769FF]"
                   />
                 </a>
               </span>
@@ -87,22 +111,23 @@ const Navbar = () => {
             {/* Navigation for larger screen*/}
             <nav className="hidden lg:flex  items-center justify-evenly ">
               <span className="flex gap-11 ml-24 text-[15px] font-bold uppercase">
-                <a href="#home" className="hover:text-[#3c5570]">
+                <a href="#home" className="hover:text-[#7c94ae]">
                   Home
                 </a>
-                <a href="#services" className="hover:text-[#3c5570]">
+                <a href="#services" className="hover:text-[#7c94ae]">
                   Who we are
                 </a>
-                <a href="#portfolio" className="hover:text-[#3c5570]">
+                <a href="#portfolio" className="hover:text-[#7c94ae]">
                   Latest Work
                 </a>
-                <a
-                  href="#cta"
-                  className="hover:text-[#3c5570] visited:text-[#3c5570]"
-                >
+                <a href="#cta" className="hover:text-[#7c94ae]">
                   Get In touch
                 </a>
               </span>
+              {/* Search Icon (Moved to Right) */}
+              <a href="" className=" hover:text-[#7c94ae] ">
+                <FaSearch size={14} />
+              </a>
             </nav>
             {/* Menu toggle */}
             <div className="lg:hidden relative ">
@@ -110,26 +135,26 @@ const Navbar = () => {
               {showMenu && (
                 <div className="fixed top-[111px] left-0 right-0 w-full   bg-[#506a85] text-white flex flex-col items-center justify-center gap-4 text-xl shadow-lg z-40 uppercase ">
                   <a
-                    href=""
-                    className="text-[15px] font-bold  border-b border-[#3d5269] p-5  w-full text-center hover:text-[#3c5570]"
+                    href="#home"
+                    className="text-[15px] font-bold  border-b border-[#3d5269] p-5  w-full text-center hover:text-[#00bc9c]"
                   >
                     Home
                   </a>
                   <a
-                    href=""
-                    className="text-[15px] font-bold  border-b border-[#3d5269] pb-5 w-full text-center"
+                    href="#services"
+                    className="text-[15px] font-bold  border-b border-[#3d5269] pb-5 w-full text-center hover:text-[#00bc9c]"
                   >
                     Who we are
                   </a>
                   <a
-                    href=""
-                    className="text-[15px] font-bold  border-b border-[#3d5269] pb-5  w-full text-center"
+                    href="#portfolio"
+                    className="text-[15px] font-bold  border-b border-[#3d5269] pb-5  w-full text-center hover:text-[#00bc9c]"
                   >
                     latest work
                   </a>
                   <a
-                    href=""
-                    className="text-[15px] font-bold   border-b border-[#3d5269] mb-2 pb-5 w-full  text-center"
+                    href="#cta"
+                    className="text-[15px] font-bold   border-b border-[#3d5269] mb-2 pb-5 w-full  text-center hover:text-[#00bc9c]"
                   >
                     Get in Touch
                   </a>
