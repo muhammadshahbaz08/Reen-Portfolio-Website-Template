@@ -1,10 +1,7 @@
 const Hero = () => {
   return (
     // Hero or Feature Seciton
-    <section
-      className="bg-[#47617c] h-[780px] bg-cover bg-no-repeat bg-[url(../../public/img/bg.jpg)] overflow-hidden "
-      id="home"
-    >
+    <section className="bg-[#47617c] h-[780px] bg-cover bg-no-repeat bg-[url(../../public/img/bg.jpg)] overflow-hidden ">
       {/*contianer*/}
       <div className="container px-4 mx-auto text-white text-center">
         <div className="w-full max-w-[945px] mx-auto  ">

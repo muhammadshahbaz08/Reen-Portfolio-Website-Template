@@ -111,7 +111,7 @@ const Navbar = () => {
             {/* Navigation for larger screen*/}
             <nav className="hidden lg:flex  items-center justify-evenly ">
               <span className="flex gap-11 ml-24 text-[15px] font-bold uppercase">
-                <a href="#home" className="hover:text-[#7c94ae]">
+                <a href="/" className="hover:text-[#7c94ae]">
                   Home
                 </a>
                 <a href="#services" className="hover:text-[#7c94ae]">
@@ -135,7 +135,7 @@ const Navbar = () => {
               {showMenu && (
                 <div className="fixed top-[111px] left-0 right-0 w-full   bg-[#506a85] text-white flex flex-col items-center justify-center gap-4 text-xl shadow-lg z-40 uppercase ">
                   <a
-                    href="#home"
+                    href="/"
                     className="text-[15px] font-bold  border-b border-[#3d5269] p-5  w-full text-center hover:text-[#00bc9c]"
                   >
                     Home
