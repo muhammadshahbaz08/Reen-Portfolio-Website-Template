@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import Image from "next/image";
+import Link from "next/link";
 import {
   galleryPost1,
   galleryPost2,
@@ -33,13 +34,13 @@ const Footer = () => {
                 que aut labor. Laceaque eictemperum quiae sitiorem rest non
                 restibusaes maio es dem tumquam.
               </p>
-              <a
+              <Link
                 href=""
                 className="block text-[14px] font-bold mt-8  text-[#a3b1bf] hover:text-[#00bc9c]"
               >
                 More about us &nbsp;
                 <FaArrowRight className="inline " />
-              </a>
+              </Link>
             </div>
             {/* col-2 */}
             <div>
@@ -129,30 +130,30 @@ const Footer = () => {
 
             {/* Right Side: Navigation Links */}
             <nav className="flex space-x-1 text-[14px]">
-              <a
+              <Link
                 href="/"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#services"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
                 Who we are
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#portfolio"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
                 Latest Work
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#cta"
                 className="relative after:content-['·'] after:mx-2 after:text-gray-400 last:after:content-none hover:text-[#00bc9c]"
               >
                 Get in touch
-              </a>
+              </Link>
             </nav>
           </div>
         </div>

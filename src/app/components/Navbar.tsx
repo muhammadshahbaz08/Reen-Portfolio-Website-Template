@@ -14,6 +14,7 @@ import { CgMenu } from "react-icons/cg";
 import Image from "next/image";
 import { logo } from "../../../public/img";
 import { useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -37,7 +38,7 @@ const Navbar = () => {
             {/* mini-header-socails */}
             <div className="flex justify-end ">
               <span className="flex items-center gap-4 ">
-                <a
+                <Link
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -46,8 +47,8 @@ const Navbar = () => {
                     size={14}
                     className=" text-text hover:text-[#1877F2]"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://plus.google.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -56,8 +57,8 @@ const Navbar = () => {
                     size={14}
                     className=" text-text hover:text-[#DB4437]"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://twitter.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -66,15 +67,15 @@ const Navbar = () => {
                     size={14}
                     className=" text-text hover:text-[#1DA1F2]"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://pinterest.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaPinterest className=" text-text hover:text-[#E60023]" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://dribbble.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -83,8 +84,8 @@ const Navbar = () => {
                     size={14}
                     className=" text-text hover:text-[#EA4C89]"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://behance.net"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -93,7 +94,7 @@ const Navbar = () => {
                     size={14}
                     className=" text-text hover:text-[#1769FF]"
                   />
-                </a>
+                </Link>
               </span>
             </div>
           </div>
@@ -111,53 +112,53 @@ const Navbar = () => {
             {/* Navigation for larger screen*/}
             <nav className="hidden lg:flex  items-center justify-evenly ">
               <span className="flex gap-11 ml-24 text-[15px] font-bold uppercase">
-                <a href="/" className="hover:text-[#7c94ae]">
+                <Link href="/" className="hover:text-[#7c94ae]">
                   Home
-                </a>
-                <a href="#services" className="hover:text-[#7c94ae]">
+                </Link>
+                <Link href="#services" className="hover:text-[#7c94ae]">
                   Who we are
-                </a>
-                <a href="#portfolio" className="hover:text-[#7c94ae]">
+                </Link>
+                <Link href="#portfolio" className="hover:text-[#7c94ae]">
                   Latest Work
-                </a>
-                <a href="#cta" className="hover:text-[#7c94ae]">
+                </Link>
+                <Link href="#cta" className="hover:text-[#7c94ae]">
                   Get In touch
-                </a>
+                </Link>
               </span>
               {/* Search Icon (Moved to Right) */}
-              <a href="" className=" hover:text-[#7c94ae] ">
+              <Link href="" className=" hover:text-[#7c94ae] ">
                 <FaSearch size={14} />
-              </a>
+              </Link>
             </nav>
             {/* Menu toggle */}
             <div className="lg:hidden relative ">
               <CgMenu size={40} onClick={() => setShowMenu(!showMenu)} />
               {showMenu && (
                 <div className="fixed top-[111px] left-0 right-0 w-full   bg-[#506a85] text-white flex flex-col items-center justify-center gap-4 text-xl shadow-lg z-40 uppercase ">
-                  <a
+                  <Link
                     href="/"
                     className="text-[15px] font-bold  border-b border-[#3d5269] p-5  w-full text-center hover:text-[#00bc9c]"
                   >
                     Home
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#services"
                     className="text-[15px] font-bold  border-b border-[#3d5269] pb-5 w-full text-center hover:text-[#00bc9c]"
                   >
                     Who we are
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#portfolio"
                     className="text-[15px] font-bold  border-b border-[#3d5269] pb-5  w-full text-center hover:text-[#00bc9c]"
                   >
                     latest work
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#cta"
                     className="text-[15px] font-bold   border-b border-[#3d5269] mb-2 pb-5 w-full  text-center hover:text-[#00bc9c]"
                   >
                     Get in Touch
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
