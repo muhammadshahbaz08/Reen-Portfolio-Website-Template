@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Source_Sans_3 } from "next/font/google";
 import { Navbar, Footer } from "./components";
 import "./globals.css";
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={sourceSans.className}>
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
